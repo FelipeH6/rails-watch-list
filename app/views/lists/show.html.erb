@@ -3,7 +3,8 @@
     <h1><%= @list.name %></h1>
   </div>
 
-  <span class="movie-tag"><%= pluralize(@list.movies.size, 'movie') %></span>
+  <span class="movie-tag"><%= link_to 'Back to Main page', lists_path %></span>
+
 </div>
 
 <div class="container mb-5">

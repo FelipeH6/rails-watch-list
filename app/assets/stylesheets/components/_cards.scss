@@ -10,8 +10,24 @@
   font-weight: bold;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  border-radius: 5px;
+  position: relative;
 }
 
 .card-large {
   height: 50vh;
+}
+
+.count {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  font-size: 8px;
+  width: 61px;
+  height: 28px;
+  border-radius: 20px;
+}
+
+.add{
+  border-radius: 10px;
 }
