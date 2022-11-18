@@ -3,7 +3,7 @@
     <h1><%= @list.name %></h1>
   </div>
 
-  <span class="movie-tag"><%= link_to 'Back to Main page', lists_path %></span>
+  <span class="movie-tag"><%= link_to 'Back', lists_path, style: 'text-decoration: none; color: white;'%></span>
 
 </div>
 
@@ -16,10 +16,10 @@
     </span>
 
     <div>
-      <%= link_to new_list_bookmark_path(@list), class: 'btn btn-primary' do %>
+      <%= link_to new_list_bookmark_path(@list), class: 'btn btn-primary rounded' do %>
         <i class="fas fa-plus"></i> Add movie
       <% end %>
-      <%= link_to list_path(@list), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"},  class: 'btn btn-danger' do %>
+      <%= link_to list_path(@list), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"},  class: 'btn btn-danger rounded' do %>
         <i class="fas fa-trash-alt"></i> Delete list
       <% end %>
     </div>
